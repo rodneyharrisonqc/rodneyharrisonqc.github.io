@@ -1,0 +1,167 @@
+# Site settings
+baseurl = "http://rodneyharrisonqc.com/"
+languageCode = "en-us"
+title = "Rodney Harrison QC | Leading Auckland Barrister"
+theme = "orakei"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-63065404-1"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Rodney Harrison QC"
+	description = "Leading Auckland Barrister"
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "rehqc@xtra.co.nz"
+	
+	# Navigation
+	[params.navigation]
+		brand = "Rodney Harrison QC"
+		about = "About"
+		contact = "Contact"
+		location = "Location"
+		papers = "Papers"		
+
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.jpg' in
+		# the 'static/img' folder.
+		title = "Rodney Harrison QC"
+		subtitle = ""
+		buttonText = "About"
+
+
+    # About section
+	[params.about]
+		title = "About"
+		subtitle = "Rodney Harrison QC is a leading New Zealand barrister"
+		endpoint = "Be part<br>of our<br>story!"
+
+		left_column_title = "Leading NZ Barrister"
+		left_column = "Appointed Queen's Counsel in 1994, Rodney is a senior Silk counted among New Zealand's most expert advocates. He is renowned as an expert in commercial disputes of all kinds, and is frequently retained to take matters on appeal."
+
+		right_column_title = "Recognised in the Pacific"
+		right_column = "Rodney is respected as an advocate throughout the Pacific, where he has acted in numerous leading cases. He is a member of the Bars of New Zealand; the Cook Islands; Samoa; and Tonga, where he holds the rank equivalent to Queen's Counsel."
+
+		[[params.about.rodney]]
+			img = "rodney.jpg"
+			name = "Rodney Harrison QC"
+			position = "Barrister"
+			social = [
+				["fa-google-plus", "https://plus.google.com/117506033107770135947/about"],
+				["fa-linkedin", "https://nz.linkedin.com/in/rodney-harrison-qc-657509ba"],
+				["fa-envelope", "mailto:rehqc@xtra.co.nz"]
+			]
+
+	# Contact section
+	[params.contact]
+		title = "Contact"
+		
+		address = ["Dr Rodney Harrison QC",
+			"Level 10, Southern Cross Building",
+			"59 High Street",
+			"Corner High Street and Victoria Street",
+			"Auckland CBD"]
+
+		[[params.contact.modes]]
+			mode = "Office Phone"
+			icon = "fa-phone"
+			text = ["(09) 303-4157"]
+			link = "#contact"
+
+		[[params.contact.modes]]
+			mode = "Postal"
+			icon = "fa-envelope"
+			text = ["PO Box 1153",
+			"Auckland 1140",
+			"New Zealand"]
+			link = "#contact"
+
+		[[params.contact.modes]]
+			mode = "Cellphone"
+			icon = "fa-phone"
+			text = ["0274-925945"]
+			link = "#contact"
+
+		[[params.contact.modes]]
+			mode = "Email"
+			icon = "fa-envelope"
+			text = ["rehqc@xtra.co.nz"]
+			link = "mailto:rehqc@xtra.co.nz"
+
+	# Location
+	[params.location]
+		title = "Location"
+
+	# Papers section
+
+	[params.papers]
+		title = "Selected Papers"
+		
+		[[params.papers.paper]]
+			id = "1"
+			link = "/papers/REHQC_Chapman_v.pdf"
+			title = "Attorney-General v Chapman: Negating Effective Remedies for Judicial Breach of the Bill of Rights"
+			blurb = "In Attorney-General v Chapman [2012] 1 NZLR 462, a divided Supreme Court has ruled out all prospect of a Baigent damages remedy for breach by the judicial branch of the New Zealand Bill of Rights Act 1990 (“judicial BORA breach”). "
+
+	
+		[[params.papers.paper]]
+			id = "2"
+			link = "/papers/REHQC_Human_Rights_Remedies.pdf"
+			title = "Using Human Rights Law in Litigation: Remedies for Breach of the New Zealand Bill of Rights Act 1990"
+			blurb = "This paper addresses the topic of remedies for breach of the New Zealand Bill of Rights Act 1990 (“BORA”). It is mainly concerned with civil remedies for BORA breach."
+	
+		[[params.papers.paper]]
+			id = "3"
+			link = "/papers/REHQC_Human_Rights_Employment.pdf"
+			title = "Employment Law and Human Rights – A Crucial Interface”"
+			blurb = "The focus of this paper is the “crucial interface” between employment law and human rights norms."
+
+		
+		[[params.papers.paper]]
+			id = "4"
+			link = "/papers/REHQC_Bernard_Brown.pdf"
+			title = "Address for Bernard Brown, 17 October 2013"
+			blurb = "It is a tremendous but daunting honour to have been asked by Bernard to serve as an hors d’oeuvre to his splendid repast which will shortly follow."
+	
+		
+
+	# Footer section
+	[params.footer]
+		copyright = "2016 Rodney Harrison QC"
+
+		thanks = "Built with [Hugo](https://gohugo.io) and the [Agency](https://themes.gohugo.io/agency/) theme"
+
+		[[params.footer.social]]
+			icon = "fa-google-plus"
+			link = "https://plus.google.com/117506033107770135947/about"
+
+		[[params.footer.social]]
+			icon = "fa-linkedin"
+			link = "https://nz.linkedin.com/in/rodney-harrison-qc-657509ba"
+
+		[[params.footer.social]]
+			icon = "fa-envelope"
+			link = "mailto:rehqc@xtra.co.nz"
+
